@@ -2,6 +2,9 @@
 #define SPARRAYLIST_H_
 #include <stdbool.h>
 
+
+#define EMPTY_ITEM_VALUE -1
+
 /**
  * SPArrayList summary:
  *

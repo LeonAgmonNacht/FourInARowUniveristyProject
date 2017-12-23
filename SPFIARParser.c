@@ -6,7 +6,7 @@
  * Removing leading whitespaces
  * @return a Pointer to the new string
  */
-char *trimLeadingWhitespaces(char *str)
+char* trimLeadingWhitespaces(char* str)
 {
     while (isspace((unsigned char)*str))
         str++;
@@ -53,9 +53,10 @@ SPCommand spParserPraseLine(const char* str) {
 
     // Commands with params:
     else if (strncmp(add_disc_string, str, strlen(add_disc_string))) {
-        char* arg_string = trimLeadingWhitespaces(str+strlen(add_disc_string));
+        // TODO: FIX char* arg_string = trimLeadingWhitespaces(str+strlen(add_disc_string));
+        char* arg_string = ""; // TODO: Delete after fix
         if (!spParserIsInt(arg_string)) {
-            break;
+            return cmd;
         }
         cmd.cmd = SP_ADD_DISC;
         cmd.validArg = true;

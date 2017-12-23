@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * Fills the given array with NULL
+ * Fills the given array with EMPTY_ITEM_VALUE
  */
-void fillWithNulls(int* array, int arraySize) {
+void fillWithDefaultValue(int* array, int arraySize) {
     for (int i = 0; i < arraySize; i++)
-        array[i] = NULL;
+        array[i] = EMPTY_ITEM_VALUE;
 }
 
 SPArrayList* spArrayListCreate(int maxSize) {
@@ -18,7 +18,7 @@ SPArrayList* spArrayListCreate(int maxSize) {
     list->maxSize = maxSize;
     list->actualSize = 0;
     list->elements = malloc(maxSize * sizeof(int));
-    fillWithNulls(list->elements, list->maxSize);
+    fillWithDefaultValue(list->elements, list->maxSize);
 
     if (list->elements == NULL) {
         return NULL;
@@ -53,8 +53,8 @@ SP_ARRAY_LIST_MESSAGE spArrayListClear(SPArrayList* src) {
     src->actualSize = 0;
     free(src->elements);
     src->elements = malloc(src->maxSize * sizeof(int));
-    fillWithNulls(src->elements, src->maxSize);
-
+    fillWithDefaultValue(src->elements, src->maxSize);
+    return SP_ARRAY_LIST_SUCCESS;
 }
 /**
  * Shifts the array 1 index to the right if should_shift_right, else shifting 1 index to the left.
@@ -106,7 +106,7 @@ SP_ARRAY_LIST_MESSAGE spArrayListRemoveAt(SPArrayList* src, int index) {
     if (src->actualSize == 0) return SP_ARRAY_LIST_EMPTY;
     if (src == NULL || index >= src->actualSize) return SP_ARRAY_LIST_INVALID_ARGUMENT;
 
-    (src->elements)[index] = NULL;
+    (src->elements)[index] = EMPTY_ITEM_VALUE;
     shiftArray(src->elements, false, index, src->actualSize);
     src->actualSize -= 1;
 
@@ -119,11 +119,11 @@ SP_ARRAY_LIST_MESSAGE spArrayListRemoveFirst(SPArrayList* src) {
 }
 
 SP_ARRAY_LIST_MESSAGE spArrayListRemoveLast(SPArrayList* src) {
-    spArrayListRemoveAt(src, src->actualSize-1);
+    return spArrayListRemoveAt(src, src->actualSize-1);
 }
 
 int spArrayListGetAt(SPArrayList* src, int index) {
-    if (src == NULL || index >= src->maxSize) return NULL;
+    if (src == NULL || index >= src->maxSize) return -1;
     return (src->elements)[index];
 }
 
@@ -136,7 +136,7 @@ int spArrayListGetLast(SPArrayList* src) {
 }
 
 int spArrayListMaxCapacity(SPArrayList* src) {
-    if (src == NULL) return NULL;
+    if (src == NULL) return -1;
     return src->maxSize;
 }
 
