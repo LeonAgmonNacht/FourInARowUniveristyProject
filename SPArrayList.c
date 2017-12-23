@@ -1,4 +1,6 @@
+
 #include "SPArrayList.h"
+
 /**
  * Fills the given array with NULL
  */
