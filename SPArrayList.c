@@ -1,5 +1,4 @@
 #include "SPArrayList.h"
-
 /**
  * Fills the given array with NULL
  */
@@ -13,16 +12,16 @@ SPArrayList* spArrayListCreate(int maxSize) {
         return NULL;
     }
 
-    SPArrayList list;
-    list.maxSize = maxSize;
-    list.actualSize = 0;
-    list.elements = malloc(maxSize * sizeof(int));
-    fillWithNulls(src->elements, src->maxSize);
+    SPArrayList *list = malloc(sizeof(SPArrayList));
+    list->maxSize = maxSize;
+    list->actualSize = 0;
+    list->elements = malloc(maxSize * sizeof(int));
+    fillWithNulls(list->elements, list->maxSize);
 
     if (list.elements == NULL) {
         return NULL;
     }
-    return &list;
+    return list;
 }
 
 SPArrayList* spArrayListCopy(SPArrayList* src) {

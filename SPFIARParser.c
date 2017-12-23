@@ -6,11 +6,11 @@
  * Removing leading whitespaces
  * @return a Pointer to the new string
  */
-char* trimLeadingWhitespaces(char* str)
+char *trimLeadingWhitespaces(char *str)
 {
-    while(str++[0] == ' ');
+    while (isspace((unsigned char)*str))
+        str++;
     return str;
-
 }
 
 bool spParserIsInt(const char* str) {
@@ -33,6 +33,8 @@ bool spParserIsInt(const char* str) {
 SPCommand spParserPraseLine(const char* str) {
 
     SPCommand cmd;
+    cmd.cmd = SP_INVALID_LINE;
+    cmd.validArg = false;
     char* add_disc_string = "add_disc";
     // No params commands:
 
@@ -51,13 +53,13 @@ SPCommand spParserPraseLine(const char* str) {
 
     // Commands with params:
     else if (strncmp(add_disc_string, str, strlen(add_disc_string))) {
-        // TODO: CHECK IF PARAMETER IS VALID, UPDATE CMD AND RETURN IT
-        //cmd.cmd = SP_ADD_DISC;
-        //cmd.validArg = true;
+        char* arg_string = trimLeadingWhitespaces(str+strlen(add_disc_string));
+        if (!spParserIsInt(arg_string)) {
+            break;
+        }
+        cmd.cmd = SP_ADD_DISC;
+        cmd.validArg = true;
         //cmd.arg = arg;
-    }
-    else {
-        cmd.cmd = SP_INVALID_LINE;
     }
 
     return cmd;
