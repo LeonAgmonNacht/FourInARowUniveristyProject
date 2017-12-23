@@ -1,9 +1,11 @@
 #include "SPArrayList.h"
+#include <stdlib.h>
+#include <string.h>
 /**
  * Fills the given array with NULL
  */
 void fillWithNulls(int* array, int arraySize) {
-    for (i = 0; i < arraySize; i++)
+    for (int i = 0; i < arraySize; i++)
         array[i] = NULL;
 }
 
@@ -18,7 +20,7 @@ SPArrayList* spArrayListCreate(int maxSize) {
     list->elements = malloc(maxSize * sizeof(int));
     fillWithNulls(list->elements, list->maxSize);
 
-    if (list.elements == NULL) {
+    if (list->elements == NULL) {
         return NULL;
     }
     return list;
@@ -61,13 +63,13 @@ SP_ARRAY_LIST_MESSAGE spArrayListClear(SPArrayList* src) {
 void shiftArray(int* array, bool shouldShiftRight, int shiftIndex, int arraySize) {
 
     if (shouldShiftRight) {
-        for (i = arraySize; i >= shiftIndex; i--) {
+        for (int i = arraySize; i >= shiftIndex; i--) {
             array[i] = array[i - 1];
         }
 
     }
     else {
-        for (i = shiftIndex; i < arraySize; i++) {
+        for (int i = shiftIndex; i < arraySize; i++) {
             array[i] = array[i + 1];
         }
     }
@@ -85,7 +87,7 @@ SP_ARRAY_LIST_MESSAGE spArrayListAddAt(SPArrayList* src, int elem, int index) {
     shiftArray(src->elements, true, index, src->actualSize);
 
     // Insert new element
-    (src->elements)[pos-1] = elem;
+    (src->elements)[index-1] = elem;
     src->actualSize += 1;
 
     return SP_ARRAY_LIST_SUCCESS;
@@ -139,7 +141,7 @@ int spArrayListMaxCapacity(SPArrayList* src) {
 }
 
 int spArrayListSize(SPArrayList* src) {
-    if (src == NULL) return NULL;
+    if (src == NULL) return -1;
     return src->actualSize;
 }
 
