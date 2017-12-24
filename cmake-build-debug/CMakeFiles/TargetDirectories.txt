@@ -1,0 +1,3 @@
+/Users/meltzer/Documents/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/meltzer/Documents/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/meltzer/Documents/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir
