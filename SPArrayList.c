@@ -44,6 +44,7 @@ void spArrayListDestroy(SPArrayList* src) {
     free(src->elements);
     free(src);
     // TODO: Meltzer do u approve?
+    //Answer: Yes
 }
 
 SP_ARRAY_LIST_MESSAGE spArrayListClear(SPArrayList* src) {

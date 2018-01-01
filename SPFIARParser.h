@@ -5,6 +5,12 @@
 //specify the maximum line length
 #define SP_MAX_LINE_LENGTH 1024
 
+#define ZERO_ASCII_VALUE '0'
+#define NINE_ASCII_ZERO '9'
+#define SUGGEST_MOVE_STRING "suggest_move"
+#define UNDO_MOVE_STRING "undo_move"
+#define QUIT_STRING "quit"
+#define RESTART_GAME_STRING "restart_game"
 //a type used to represent a command
 typedef enum {
 	SP_UNDO_MOVE,

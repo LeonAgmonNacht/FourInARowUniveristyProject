@@ -38,6 +38,13 @@ typedef struct sp_fiar_game_t {
 } SPFiarGame;
 
 /**
+ * this will represent a cell in our game
+ */
+typedef struct sp_fiar_board_cell_t{
+    int x;
+    int y;
+} SPFiarBoardCell;
+/**
  * Type used for returning error codes from game functions
  */
 typedef enum sp_fiar_game_message_t {
