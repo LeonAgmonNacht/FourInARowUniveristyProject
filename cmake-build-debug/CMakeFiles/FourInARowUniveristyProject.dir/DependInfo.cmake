@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/meltzer/Documents/FourInARowUniveristyProject/SPArrayList.c" "/Users/meltzer/Documents/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPArrayList.c.o"
-  "/Users/meltzer/Documents/FourInARowUniveristyProject/SPArrayListUnitTest.c" "/Users/meltzer/Documents/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPArrayListUnitTest.c.o"
-  "/Users/meltzer/Documents/FourInARowUniveristyProject/SPFIARGameUnitTest.c" "/Users/meltzer/Documents/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPFIARGameUnitTest.c.o"
-  "/Users/meltzer/Documents/FourInARowUniveristyProject/SPFIARParser.c" "/Users/meltzer/Documents/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPFIARParser.c.o"
-  "/Users/meltzer/Documents/FourInARowUniveristyProject/SPFIARParserUnitTest.c" "/Users/meltzer/Documents/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPFIARParserUnitTest.c.o"
+  "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/SPArrayList.c" "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPArrayList.c.o"
+  "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/SPArrayListUnitTest.c" "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPArrayListUnitTest.c.o"
+  "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/SPFIARGameUnitTest.c" "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPFIARGameUnitTest.c.o"
+  "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/SPFIARParser.c" "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPFIARParser.c.o"
+  "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/SPFIARParserUnitTest.c" "/Users/daniel/Documents/GitHub/FourInARowUniveristyProject/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/SPFIARParserUnitTest.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
