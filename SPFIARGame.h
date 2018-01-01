@@ -29,6 +29,12 @@
 #define SP_FIAR_GAME_TIE_SYMBOL '-'
 #define SP_FIAR_GAME_EMPTY_ENTRY ' '
 
+/**
+ * the direction of span
+ */
+typedef enum {
+	DIAGONAL_UP,DIAGONAL_DOWN,VERTICAL,HORIZONTAL
+} SPAN_DIRECTION;
 typedef struct sp_fiar_game_t {
 	char gameBoard[SP_FIAR_GAME_N_ROWS][SP_FIAR_GAME_N_COLUMNS];
 	int tops[SP_FIAR_GAME_N_COLUMNS];

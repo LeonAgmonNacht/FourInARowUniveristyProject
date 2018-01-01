@@ -1,6 +1,8 @@
 #include "SPMinimax.h"
 
 
+#define WEIGHT_VECTOR {-5,-2,-1,1,2,5}
+#define WEIGHT_VECTOR_SIZE 6
 /**
  * SPMinMax tree
  */
@@ -56,8 +58,9 @@ int getMin(void array[],comperator cmpFunc,int array_count,int sizeOfElement)
     return minIndex;
 }
 
-SPMinMaxTree* scoreTree()
+SPMinMaxTree* scoreTree(SPFiarGame* currentGame)
 {
+
 
 
     return NULL;
@@ -65,15 +68,27 @@ SPMinMaxTree* scoreTree()
 /**
  * score game state
  * @param gameState the game state to score
+ * @param A_player_symbol the player symbol to score according to
  * @return a score as described in assignment
  */
-int scoreBoard(SPFiarGame* gameState)
+int scoreBoard(SPFiarGame* gameState,char A_player_symbol)
 {
+    int score = 0;
+    int weight_vector[WEIGHT_VECTOR_SIZE]= WEIGHT_VECTOR;
+    for(int spanDirection = DIAGONAL_UP;spanDirection<=HORIZONTAL;spanDirection++){
+        if(spanDirection == DIAGONAL_UP){
+            for(int row = 0;row>=SP_FIAR_GAME_SPAN;row++) {
+                for(int column = 0; column<SP_FIAR_GAME_N_COLUMNS-SP_FIAR_GAME_SPAN;column++){
+
+                }
+            }
+        }
+    }
 
 }
 
 int spMinimaxSuggestMove(SPFiarGame *currentGame, unsigned int maxDepth) {
-    return scoreTree();
+    return scoreTree(currentGame);
 
 }
 

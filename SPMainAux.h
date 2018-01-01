@@ -5,12 +5,7 @@
 
 #include "SPFIARGame.h"
 
-/**
- * the direction of span
- */
-typedef enum {
-    DIAGONAL,VERTICAL,HORIZONTAL
-} SPAN_DIRECTION;
+
 /**
  *scoring the game state as the current player playes
  * @param gameState the game state
