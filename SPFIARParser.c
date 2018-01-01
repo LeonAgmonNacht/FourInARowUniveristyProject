@@ -23,7 +23,7 @@ bool spParserIsInt(const char* str) {
     // Loop the string chars and check for a non-digit char:
     while (*str)
     {
-        if (str[0] < 48 || str[0] > 57)
+        if (str[0] < ZERO_ASCII_VALUE || str[0] > NINE_ASCII_ZERO)
             return false;
         ++str;
     }
@@ -38,16 +38,16 @@ SPCommand spParserPraseLine(const char* str) {
     char* add_disc_string = "add_disc";
     // No params commands:
 
-    if (strcmp(str, "suggest_move")) {
+    if (strcmp(str, SUGGEST_MOVE_STRING)) {
         cmd.cmd = SP_SUGGEST_MOVE;
     }
-    else if (strcmp(str, "undo_move")) {
+    else if (strcmp(str, UNDO_MOVE_STRING)) {
         cmd.cmd = SP_UNDO_MOVE;
     }
-    else if (strcmp(str, "quit")) {
+    else if (strcmp(str, QUIT_STRING)) {
         cmd.cmd = SP_QUIT;
     }
-    else if (strcmp(str, "restart_game")) {
+    else if (strcmp(str, RESTART_GAME_STRING)) {
         cmd.cmd = SP_RESTART;
     }
 

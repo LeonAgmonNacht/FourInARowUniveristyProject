@@ -2,6 +2,8 @@
 #define SPMINIMAX_H_
 
 #include "SPFIARGame.h"
+#include "SPMinimaxNode.h"
+#include <stdbool.h>
 
 /**
  * Given a game state, this function evaluates the best move according to
@@ -18,5 +20,6 @@
  */
 int spMinimaxSuggestMove(SPFiarGame* currentGame,
 		unsigned int maxDepth);
+
 
 #endif
