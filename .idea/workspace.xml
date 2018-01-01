@@ -12,22 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d55299f-cf5c-49cb-86f2-02ddcb46ef6c" name="Default" comment="Merge branch 'master' of https://github.com/LeonAgmonNacht/FourInARowUniveristyProject&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/C.includecache" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/depend.internal" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/6" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SPArrayList.c" afterPath="$PROJECT_DIR$/SPArrayList.c" />
-      <change beforePath="$PROJECT_DIR$/SPFIARGame.h" afterPath="$PROJECT_DIR$/SPFIARGame.h" />
-      <change beforePath="$PROJECT_DIR$/SPFIARParser.c" afterPath="$PROJECT_DIR$/SPFIARParser.c" />
-      <change beforePath="$PROJECT_DIR$/SPFIARParser.h" afterPath="$PROJECT_DIR$/SPFIARParser.h" />
-      <change beforePath="$PROJECT_DIR$/SPMainAux.c" afterPath="$PROJECT_DIR$/SPMainAux.c" />
-      <change beforePath="$PROJECT_DIR$/SPMainAux.h" afterPath="$PROJECT_DIR$/SPMainAux.h" />
-      <change beforePath="$PROJECT_DIR$/SPMinimax.c" afterPath="$PROJECT_DIR$/SPMinimax.c" />
-      <change beforePath="$PROJECT_DIR$/SPMinimax.h" afterPath="$PROJECT_DIR$/SPMinimax.h" />
-      <change beforePath="$PROJECT_DIR$/SPMinimaxNode.c" afterPath="$PROJECT_DIR$/SPMinimaxNode.c" />
-      <change beforePath="$PROJECT_DIR$/SPMinimaxNode.h" afterPath="$PROJECT_DIR$/SPMinimaxNode.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FourInARowUniveristyProject.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SPFIARParser.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SPFIARParser.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SPFIARParser.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+            <state relative-caret-position="672">
+              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -70,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,10 +102,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1920" />
-    <option name="height" value="980" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -199,15 +183,15 @@
       <workItem from="1514050387084" duration="1526000" />
       <workItem from="1514052193470" duration="400000" />
       <workItem from="1514140841234" duration="59000" />
-      <workItem from="1514842466621" duration="937000" />
+      <workItem from="1514842466621" duration="1189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12932000" />
+    <option name="totallyTimeSpent" value="13184000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="980" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -533,14 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SPMinimaxNode.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -615,8 +591,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SPFIARParser.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+        <state relative-caret-position="672">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
