@@ -11,13 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d55299f-cf5c-49cb-86f2-02ddcb46ef6c" name="Default" comment="Merge branch 'master' of https://github.com/LeonAgmonNacht/FourInARowUniveristyProject&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+    <list default="true" id="1d55299f-cf5c-49cb-86f2-02ddcb46ef6c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SPFIARGame.h" afterPath="$PROJECT_DIR$/SPFIARGame.h" />
-      <change beforePath="$PROJECT_DIR$/SPMainAux.h" afterPath="$PROJECT_DIR$/SPMainAux.h" />
-      <change beforePath="$PROJECT_DIR$/SPMinimax.c" afterPath="$PROJECT_DIR$/SPMinimax.c" />
-      <change beforePath="$PROJECT_DIR$/SPMinimax.h" afterPath="$PROJECT_DIR$/SPMinimax.h" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,6 +23,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
@@ -75,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/SPMinimax.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="553">
-              <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+              <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -145,6 +142,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Daniel Meltzer &lt;meltzerdanielebay@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -254,12 +256,20 @@
       <workItem from="1514052193470" duration="400000" />
       <workItem from="1514140841234" duration="59000" />
       <workItem from="1514842466621" duration="1189000" />
-      <workItem from="1514850606191" duration="35000" />
+      <workItem from="1514850606191" duration="153000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/LeonAgmonNacht/FourInARowUniveristyProject&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1514850687987</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1514850687987</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17798000" />
+    <option name="totallyTimeSpent" value="17916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -668,7 +678,7 @@
     <entry file="file://$PROJECT_DIR$/SPMinimax.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
-          <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <caret line="65" column="16" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
           <folding />
         </state>
       </provider>
