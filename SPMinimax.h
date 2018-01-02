@@ -2,8 +2,7 @@
 #define SPMINIMAX_H_
 
 
-
-
+#include <limits.h>
 #include "SPFIARGame.h"
 #include "SPMinimaxNode.h"
 #include <stdbool.h>
