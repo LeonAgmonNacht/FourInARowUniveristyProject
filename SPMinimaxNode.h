@@ -3,6 +3,9 @@
 
 //Put all decleartions and constants here
 
+#define MAX_DEPTH 7
+
+#define CHILDREN_CONST_DEPTH_INCREASE 1
 /**
  * struct that represents min max node
  */
@@ -13,16 +16,10 @@ typedef struct sp_min_max_node_t
     int children_count;
     int score;
     int depth;
+    char tree_representation[MAX_DEPTH];
 } SPMinMaxNode;
 
 
-
-/**
- * set ancestor to node
- * @param node the node to set ancestor to
- * @param ancestor the ancestor of the node
- */
-void setAncestor(SPMinMaxNode* node,SPMinMaxNode* ancestor);
 
 
 /**
